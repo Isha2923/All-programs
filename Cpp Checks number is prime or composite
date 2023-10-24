@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout<<"Enter a number : ";
+	int n;
+	cin >> n;
+	bool divided = false;
+	for (int d = 2;d < n; d++) {
+		if (n % d == 0) {
+			divided = true;
+		}
+	}
+    
+	if (divided) {
+		cout << "It is composite number" << endl;
+	}else if (n==1 || n==0){
+	    cout<<"Neither prime nor composite"<<endl;
+	}else {
+		cout << "It is prime number" << endl;
+	}
+}
